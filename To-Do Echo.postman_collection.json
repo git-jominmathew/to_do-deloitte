@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "ee33f70a-169c-431c-ab0f-af790bc1da02",
+		"name": "To-Do Echo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15027932"
+	},
+	"item": [
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9031/api/todoItems/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9031",
+					"path": [
+						"api",
+						"todoItems",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9031/api/todoItems/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9031",
+					"path": [
+						"api",
+						"todoItems",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "todo-user",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"task\": \"jomin task\",\r\n\"done\": false\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9031/api/todoItems/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9031",
+					"path": [
+						"api",
+						"todoItems",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 2,\r\n\"task\": \"second task\",\r\n\"done\": false\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9031/api/todoItems/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9031",
+					"path": [
+						"api",
+						"todoItems",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9031/api/todoItems/delete/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9031",
+					"path": [
+						"api",
+						"todoItems",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 2,\r\n\"task\": \"ha ha ha task\",\r\n\"done\": false\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9031/api/todoItems/update/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9031",
+					"path": [
+						"api",
+						"todoItems",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
